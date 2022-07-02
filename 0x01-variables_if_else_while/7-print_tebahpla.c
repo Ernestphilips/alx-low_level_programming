@@ -8,11 +8,11 @@
 
 int main(void)
 {
-int n;
-for (n = 0; n < 10; n++)
+char ch;
+for (ch = 'z'; ch >= 'a'; ch--)
 {
-printf("%d", n);
+putchar(ch);
 }
-printf("\n");
+putchar(10);
 return (0);
 }
