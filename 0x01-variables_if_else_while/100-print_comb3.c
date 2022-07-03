@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -14,8 +17,8 @@ for (n = 49; n <= 57; n++)
 {
 if (n > ch)
 {
-	int putchar(int ch);
-	int putchar(int n);
+	putchar(ch);
+	putchar(n);
 
 if (ch != 56 || ch != 57)
 {
