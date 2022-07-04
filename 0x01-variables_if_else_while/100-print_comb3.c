@@ -11,20 +11,18 @@ int main(void)
 {
 int ch;
 int n;
-for (ch = 48; ch <= 56; ch++)
+for (ch = 0; ch < 9; ch++)
 {
-for (n = 49; n <= 57; n++)
+for (n = ch + 1; n < 10; n++)
 {
-if (n > ch)
-{
-	putchar(ch);
-	putchar(n);
+	putchar((ch % 10) + '0');
+	putchar((n % 10) + '0');
 
-if (ch != 56 || n != 57)
+if (ch == 8 && n == 9)
+continue;
 {
 	putchar(44);
 	putchar(32);
-}
 }
 }
 }
