@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Create alphabets
+ * main - prints the lowercase alphabets
  *
  * Return: Always 0 if successful
  */
 
-void print_alphabet(void)
+int main(void); void print_alphabet(void)
 {
 int i;
 
@@ -19,5 +19,4 @@ for (i = 'a'; i <= 'z'; i++)
 {
 	_putchar('\n');
 }
-
 }
