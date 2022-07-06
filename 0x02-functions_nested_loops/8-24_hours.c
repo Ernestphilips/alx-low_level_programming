@@ -2,11 +2,13 @@
 
 /**
  * jack_bauerr -> prints 24 hours
+ * 
+ * Return: Always 0 if successfull
  */
-
-void jack_bauer(void)
-
-	int i, j;
+int main(void); void jack_bauer(void)
+{
+	int i;
+	int j;
 
 	for (i = 0; i < 24; i++)
 {
@@ -36,5 +38,5 @@ void jack_bauer(void)
 	}
 		_putchar('\n');
 }
-
+}
 }
