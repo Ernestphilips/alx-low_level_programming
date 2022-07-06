@@ -8,6 +8,7 @@
 
 int main(void); int print_last_digit(int n)
 {
+	int n;
 	int y;
 
 	if (n < 0)
