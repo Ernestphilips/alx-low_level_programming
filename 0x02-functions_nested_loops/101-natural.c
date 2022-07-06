@@ -6,7 +6,7 @@
  * Return: 0 if successful
  */
 
-int main(void);
+int main(void)
 
 {
 	int i, sum = 0;
@@ -15,8 +15,8 @@ int main(void);
 
 	{
 
-		((if i % 3) == 0 || (i % 5) == 0)
-			sum += i;
+		if ((i % 3) == 0 || (i % 5) == 0)
+		sum += i;
 	}
 		printf("%d\n", sum);
 
