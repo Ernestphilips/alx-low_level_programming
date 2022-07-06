@@ -2,7 +2,7 @@
 
 /**
  * jack_bauerr -> prints 24 hours
- *
+ * @c: args
  * Return: Always 0 if successfull
  */
 int main(void); void jack_bauer(void)
