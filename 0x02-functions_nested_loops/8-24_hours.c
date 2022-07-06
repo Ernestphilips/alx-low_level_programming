@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * jack_bauerr -> prints 24 hours
- * @c: args
+ * main - jack_bauerr -> prints 24 hours
+ *
  * Return: Always 0 if successfull
  */
+
 int main(void); void jack_bauer(void)
 {
 	int i;
