@@ -5,7 +5,8 @@
  * @n: points n to the update.
  */
 
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
 	*n = 98;
+
 }
