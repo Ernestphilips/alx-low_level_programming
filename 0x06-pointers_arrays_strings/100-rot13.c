@@ -26,7 +26,7 @@ char *rot13(char *str)
 		'r', 's', 't', 'u', 'v', 'w',
 		'x', 'y', 'z', 'a', 'b', 'c',
 		'd', 'e', 'f', 'g', 'h', 'i',
-		'j', 'k', 'l',};
+		'j', 'k', 'l', 'm'};
 
 	while (str[i1])
 	{
