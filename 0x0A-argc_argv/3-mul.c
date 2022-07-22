@@ -2,10 +2,10 @@
 #include  <stdlib.h>
 
 /**
- * main - 
+ * main - function that multiplies two numbers
  * @argc: parameter
  * @argv: an array of acommand listed
- * Return: 
+ * Return: 0 if succesful
  */
 int main(int argc,  char *argv[])
 {
