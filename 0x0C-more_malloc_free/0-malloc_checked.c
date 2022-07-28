@@ -3,7 +3,8 @@
 
 /**
  * malloc_checked - checking malloc
- *  @b: parameter b
+ * @b: parameter b
+ * Return: p.
  */
 
 void *malloc_checked(unsigned int b)
