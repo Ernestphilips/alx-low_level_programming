@@ -57,7 +57,7 @@ char *create_xarray(int size)
 char *iterate_zeroes(char *str)
 {
 	while (*str && *str == '0')
-		strr++;
+		str++;
 	return (str);
 
 }
@@ -81,7 +81,7 @@ int get_digit(char c)
 		exit(98);
 	}
 
-	return (digit);
+	return (d);
 }
 
 /**
@@ -110,7 +110,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 	while (zeroes--)
 	{
-		*prod = '0'
+		*prod = '0';
 			prod--;
 	}
 	for (; mult_len >= 0; mult_len--, mult--, prod--)
@@ -146,7 +146,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 	while (*(next_prod + 1))
 		next_prod++;
-	for (; *final_prod != 'x'; final prod--)
+	for (; *final_prod != 'x'; final_prod--)
 	{
 		num = (*final_prod - '0') + (*next_prod - '0');
 		num +=  tens;
@@ -170,7 +170,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	}
 
 	if (tens)
-		*final_prod = (tens % 10) + 0';
+		*final_prod = (tens % 10) + '0';
 }
 
 /**
@@ -181,7 +181,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
  * Description: if the number of arguments is incorrect or
  * one has a non-digits, function exits with 98
  *
- * Return: 0
+ * Return: Always 0.
  */
 
 int main(int argc, char *argv[])
@@ -195,25 +195,34 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (*(argv[1] == '0')
+	if (*(argv[1]) == '0')
 		argv[1]	= iterate_zeroes(argv[1]);
 	if (*(argv[2]) == '0')
 		argv[2] = iterate_zeroes(argv[2]);
-	if (*(argv[1]) == '\0' || *(argv[2] == '\0')
+	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	size = find_len(argv[1] + find_len(argv[2]);
+	size = find_len(argv[1]) + find_len(argv[2]);
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
+
+
+	for (num = find_len(argv[2]) - 1; num >= 0; num--)
+	{
+		digit = get_digit(*(argv[2] + num));
+		get_prod(next_prod, argv[1], digit, zeroes++);
+		add_nums(final_prod, next_prod, size - 1);
+	}
 
 	for (num = 0; final_prod[num]; num++)
 	{
 		if (final_prod[num] != 'x')
 			putchar(final_prod[num]);
 	}
+
 	putchar('\n');
 
 	free(next_prod);
