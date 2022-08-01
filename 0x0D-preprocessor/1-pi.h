@@ -3,7 +3,6 @@
 
 /**
  * file: 1-pi.h
- * author: Ernest Philips
  * work: defines a macro PI as abbreviation for 3.14159265359
  */
 
