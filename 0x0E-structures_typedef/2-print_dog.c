@@ -1,9 +1,10 @@
 #include "dog.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * print_dog - prints a struct dog
- * @d: dog to be printed
+ * @d: struct dog to be printed
  * Return: nil if element of d is NULL,
  * and nothing if d is NULL.
  */
