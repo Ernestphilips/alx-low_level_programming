@@ -5,7 +5,7 @@
  * struct dog - a new type describing a dog
  * @name: name of dog
  * @owner: name of owner
- * @age: how old is the dog
+ * @age: age of the dog
  */
 struct dog
 {
@@ -14,9 +14,9 @@ struct dog
 	char *owner;
 };
 /**
- *  * dog_t - Typedef for struct dog
- *   */
-struct dog dog_t;
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
