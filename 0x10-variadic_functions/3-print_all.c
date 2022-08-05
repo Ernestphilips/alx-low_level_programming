@@ -8,7 +8,7 @@
  * @format: list of all arguments passed to the function
  * Return: void
  */
-void print_all(const char * const format,...)
+void print_all(const char * const format, ...)
 {
 	unsigned int d;
 	va_list args;
