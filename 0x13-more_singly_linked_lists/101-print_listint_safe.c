@@ -17,6 +17,9 @@ size_t looped_listint_len(const listint_t *head)
 	if (head == NULL || head->next == NULL)
 		return (0);
 
+	blue = head->next;
+	tick = (head->next)->next;
+
 	while (tick)
 	{
 		if (blue == tick)
