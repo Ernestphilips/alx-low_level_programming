@@ -46,7 +46,6 @@ void close_file(int fd)
  * If file_from doesn't exist or cannot be read, exit 98
  * If file_to cannot be created or written to,  exit 99
  * If file_to or file_from cannot be closed, exit 100.
- *
  * Return: 0 if successful
  */
 int main(int argc, char *argv[])
@@ -82,7 +81,6 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(99);
 		}
-
 		r = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (r > 0);
@@ -90,6 +88,5 @@ int main(int argc, char *argv[])
 	free(buffer);
 	close_file(from);
 	close_file(to);
-
 	return (0);
 }
